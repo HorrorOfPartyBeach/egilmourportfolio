@@ -1,27 +1,16 @@
 <template>
   <div id="app">
-    <input
-      v-model="message"
-      type="text">
-      <h2 class="message">{{ message }}</h2>
-      <h3>Text</h3>
+        <HomePage></HomePage>
+        <router-view />
   </div>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      message: 'Hello world!',
-    };
-  },
-};
-</script>
+    // import HomePage from './components/HomePage.vue';
 
-<style>
-.message {
-  font-size: 18px;
-  font-family: 'Roboto', sans-serif;
-  color: blue;
-}
-</style>
+    export default {
+        name: 'app',
+        // components: { HomePage }
+    };
+
+</script>
