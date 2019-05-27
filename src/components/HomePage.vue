@@ -1,6 +1,8 @@
 <template>
     <div id="HomePage">
-        <h1>Is this working??</h1>
+        <div id="desk-img-div">
+        <img id="desk-img" src="src\assets\deskimage1.png" alt="Desk Image">
+        </div>
     </div>
 </template>
 
@@ -10,5 +12,11 @@
 
 
 <style scoped>
-
+#desk-img-div {
+    width: 100%;
+    text-align:center;
+}
+#desk-img{
+    width: 100%;
+}
 </style>
