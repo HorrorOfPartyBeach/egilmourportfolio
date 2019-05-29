@@ -3,15 +3,17 @@
         <HomePage></HomePage>
         <NavBar></NavBar>
         <router-view />
+        <FooterComp></FooterComp>
   </div>
 </template>
 
 <script>
     import NavBar from './components/NavBar.vue';
+    import FooterComp from './components/FooterComp.vue';
 
     export default {
         name: 'app',
-        components: { NavBar }
+        components: { NavBar, FooterComp }
     };
 
 </script>
