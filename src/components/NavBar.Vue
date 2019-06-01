@@ -1,26 +1,29 @@
 <template>
-    <div id="navbar">
-  <b-navbar toggleable="lg" type="dark">
-    <b-navbar-brand href="#">Emma Gilmour</b-navbar-brand>
-
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
-    <b-collapse id="nav-collapse" is-nav>
-      <b-navbar-nav>
-        <b-nav-item href="#">Home</b-nav-item>
-        <b-nav-item href="#about-me">About</b-nav-item>
-        <b-nav-item href="#">Projects</b-nav-item>
-        <b-nav-item href="#">Blog</b-nav-item>
-        <b-nav-item href="#">Contact</b-nav-item>
-      </b-navbar-nav>
-
-      <!-- Right aligned nav items -->
-      <b-navbar-nav class="ml-auto">
-
-      </b-navbar-nav>
-    </b-collapse>
-  </b-navbar>
-</div>
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="#">Emma Gilmour</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="navbar">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about-me">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Blog</a>
+      </li>
+            <li class="nav-item">
+        <a class="nav-link" href="#footer">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 </template>
 
 <style scoped>
