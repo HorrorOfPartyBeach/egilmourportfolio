@@ -4,10 +4,9 @@ import VueRouter from 'vue-router';
 import HomePage from './components/HomePage.vue';
 import NavBar from './components/NavBar.vue';
 import FooterComp from './components/FooterComp.vue';
-import BootstrapVue from 'bootstrap-vue';
+require('bootstrap/dist/css/bootstrap.min.css');
 
 Vue.use(VueRouter);
-Vue.use(BootstrapVue);
 
 const router = new VueRouter({
   routes: [

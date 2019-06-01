@@ -34,3 +34,5 @@
         /* font-family: 'Comic Sans MS'; */
     }
 </style>
+
+// "bootstrap-vue": "^2.0.0-rc.21"

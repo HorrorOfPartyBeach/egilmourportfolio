@@ -1,9 +1,1 @@
 node_modules
-rimraf
-rimraf.cmd
-webpack
-webpack-cli
-webpack-cli.cmd
-webpack-dev-server
-webpack-dev-server.cmd
-webpack.cmd
