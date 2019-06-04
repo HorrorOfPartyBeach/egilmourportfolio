@@ -9,6 +9,8 @@
             </div>
             </div>
         </div>
+
+        <!-- About me section -->
         <div class="container-fluid" id="about-me">
             <h2 id="about-me-h2">Craft to Code Via Carpentry</h2>
             <br>
@@ -67,35 +69,6 @@
     </div>
   </div>
 </div>
-
-        <!-- <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12">
-                <div class="col-xs-4">
-                    <p class="project-divs-p">
-                        Project 1
-                    <br>
-                        This Website
-                    </p>
-                </div>
-                <div class="col-xs-4">
-                    <p class="project-divs-p">
-                        Project 2
-                    <br>
-                        Daisy
-                    </p>
-                </div>
-                <div class="col-xs-4">
-                    <p class="project-divs-p">
-                        Project 3
-                    <br>
-                        Non-coding projects
-                    </p>
-                </div>
-            </div>
-            </div>
-        </div> -->
-
         <FooterComp />
     </div>
 </template>
@@ -104,26 +77,105 @@
 import FooterComp from './FooterComp.vue';
 
 export default {
+    name: 'HomePage',
     components: {
-        'footerComp': FooterComp
+        'FooterComp': FooterComp
     },
 }
 </script>
 
 
 <style scoped>
-html {
-  scroll-behavior: smooth;
+/* Extra extra small devices (phones 300px - 359px) */
+@media only screen and (min-width: 300px) and (max-width: 359px) {
+.overlay-image h1.desk-img-h1 {
+    font-size: 30px;
 }
+.overlay-image p#desk-img-p {
+    font-size: 14px;
+}
+h2#about-me-h2 {
+    font-size: 20px;
+}
+p.about-me-p {
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 360px) and (max-width: 600px) {
+.overlay-image h1.desk-img-h1 {
+    font-size: 40px;
+}
+.overlay-image p#desk-img-p {
+    font-size: 15px;
+}
+h2#about-me-h2 {
+    font-size: 25px;
+}
+p.about-me-p {
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+} 
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+.overlay-image h1.desk-img-h1 {
+    font-size: 60px;
+}
+.overlay-image p#desk-img-p {
+    font-size: 30px;
+}
+h2#about-me-h2 {
+    font-size: 40px;
+}
+p.about-me-p {
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+} 
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+/********* Simple overlay START*******/
+/* .overlay-image h1.desk-img-h1 {
+    font-size: 80px;
+}
+.overlay-image p#desk-img-p {
+    font-size: 30px;
+} */
+/********* Simple overlay END *******/
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+
+}  */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+
+} */
+
+
 /********* Simple overlay START*******/
 /* Main container */
-.overlay-image {
+/* .overlay-image {
     position: relative;
     width: 100%;
-}
+} */
 #desk-img-div {
     width: 100%;
     text-align:center;
+    position: relative;
 }
 /* Image */
 .overlay-image .desk-img {
@@ -169,8 +221,8 @@ html {
     text-align: center;
 }
 .about-me-p {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 /********* About Me Section END *******/
 
@@ -188,14 +240,7 @@ html {
     display:flex;
     text-align: center;
 }
-.project-cols .col {
-    text-align: center;
-}
-/* div .col-xs-4 {
-    display: block;
-} */
 .col-sm {
-    
     text-align: center;
     display: block;
 }

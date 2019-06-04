@@ -7,7 +7,7 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="navbar">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#about-me">About</a>
@@ -34,5 +34,3 @@
         /* font-family: 'Comic Sans MS'; */
     }
 </style>
-
-// "bootstrap-vue": "^2.0.0-rc.21"
