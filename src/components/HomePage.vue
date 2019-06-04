@@ -69,17 +69,17 @@
     </div>
   </div>
 </div>
-        <FooterComp />
+        <!-- <FooterComp /> -->
     </div>
 </template>
 
 <script>
-import FooterComp from './FooterComp.vue';
+// import FooterComp from './FooterComp.vue';
 
 export default {
     name: 'HomePage',
     components: {
-        'FooterComp': FooterComp
+        // 'FooterComp': FooterComp
     },
 }
 </script>
