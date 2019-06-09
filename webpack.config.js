@@ -4,14 +4,9 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: './src/main.js',
-    output: {
-       path: path.resolve(__dirname, '../static'),
-       publicPath: '/dist/',
-       filename: 'build.js'
-    },
   module: {
     rules: [
-      { test: /\.js$/, use: 'babel-loader' },
+      { test: /\.js$/, exclude: /node_modules/, use: { loader: 'babel-loader'} },
       { test: /\.vue$/, use: 'vue-loader' },
       { test: /\.css$/, use: ['vue-style-loader', 'css-loader']},
     ]
@@ -23,6 +18,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
+      filename: "./index.html"
     }),
     new VueLoaderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
