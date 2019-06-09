@@ -11,6 +11,12 @@ module.exports = {
       { test: /\.css$/, use: ['vue-style-loader', 'css-loader']},
     ]
   },
+  resolve: {
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js'
+    },
+    extensions: ['*', '.js', '.vue', '.json']
+},
   devServer: {
     open: true,
     hot: true,
