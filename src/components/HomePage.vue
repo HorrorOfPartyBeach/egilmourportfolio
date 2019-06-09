@@ -50,12 +50,15 @@
       </div>
     </div>
     <div class="col-sm">
-        <div class="project-text">
+        <div class="project-bg">
+        <img id="daisy-logo" src="src\assets\daisylogo1.png" alt="Daisy logo">
+        <div id="overlay-daisy-text" style="visibility: hidden;">
             <p class="project-divs-p">
-                <strong>Project 2</strong>
+                <strong>DAISY</strong>
             <br>
-                Daisy
+                Chatbot
             </p>
+      </div>
       </div>
     </div>
     <div class="col-sm">
@@ -244,7 +247,22 @@ p.about-me-p {
     text-align: center;
     display: block;
 }
-.project-text {
+#daisy-logo {
+    border-radius: 50%;
+    border: grey 3px solid;
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    background: #000;
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+#overlay-daisy-bg {
+    background-color: rgba(84, 80, 78, 0.56);
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
     width: 120px;
     height: 120px;
     border-radius: 100px;
@@ -252,10 +270,37 @@ p.about-me-p {
     text-align: center;
     margin: auto;
 }
+#overlay-daisy-text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.project-bg {
+    background-color: rgba(84, 80, 78, 0.56);
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    background: #000;
+    text-align: center;
+    margin: auto
+}
+.project-bg:hover .project-divs-p {
+    visibility: visible;
+}
+.project-bg:hover #daisy-logo {
+    opacity: 0.3;
+}
 .project-divs-p {
     text-align: center;
     vertical-align:text-bottom;
     padding-top: 20px;
+    color: whitesmoke;
 }
 /********* Projects Section END *******/
 </style>
