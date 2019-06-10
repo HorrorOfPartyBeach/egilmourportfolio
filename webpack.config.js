@@ -21,6 +21,9 @@ module.exports = {
     open: true,
     hot: true,
   },
+  externals: {
+    bootstrap: 'bootstrap'
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',

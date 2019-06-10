@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import App from './App.vue';
+import app from './App.vue';
 import VueRouter from 'vue-router';
 import HomePage from './components/HomePage.vue';
 import ContactComp from './components/ContactComp.vue';
@@ -25,5 +25,5 @@ new Vue({
     HomePage,
     ContactComp
   },
-  render: h => h(App)
+  render: h => h(app)
 });
