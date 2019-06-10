@@ -21,6 +21,21 @@ module.exports = {
     open: true,
     hot: true,
   },
+  externals: {
+    bootstrap: {
+      Util: 'Util',
+      Alert: 'Alert',
+      Button: 'Button',
+      Carousel: 'Carousel',
+      Collapse: 'Collapse',
+      Dropdown: 'Dropdown',
+      Modal: 'Modal',
+      Popover: 'Popover',
+      Scrollspy: 'Scrollspy',
+      Tab: 'Tab',
+      Tooltip: 'Tooltip'
+  },
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
