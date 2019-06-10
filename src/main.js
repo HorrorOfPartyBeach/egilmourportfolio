@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import app from './app.vue';
+import app from '../src/app.vue';
 import VueRouter from 'vue-router';
 import HomePage from './components/HomePage.vue';
 import ContactComp from './components/ContactComp.vue';
