@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="App">
       <NavBar></NavBar>
       <router-view />
       <FooterComp></FooterComp>
@@ -12,7 +12,7 @@
     import HomePage from './components/HomePage.vue';
 
     export default {
-        name: 'app',
+        name: 'App',
         components: { 
           "NavBar": NavBar,
           "FooterComp": FooterComp,
