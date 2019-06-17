@@ -1,7 +1,8 @@
 <template>
     <div id="HomePage">
         <div id="desk-img-div" class="overlay-image">
-        <img class="desk-img" src="src\assets\deskimage1.png" alt="Desk Image">
+        <!-- <img class="desk-img" src={deskimg} alt="desk"/> -->
+        <img class="desk-img" :src="require('../assets/deskimage1.png')" alt="desk">
         <div class="desk-img-text">
             <div id="desk-text-bg">
             <h1 class="desk-img-h1">Emma Gilmour</h1>
@@ -51,7 +52,7 @@
     </div>
     <div class="col-sm">
         <div class="project-bg">
-        <img id="daisy-logo" src="src\assets\daisylogo1.png" alt="Daisy logo">
+        <img id="daisy-logo" :src="require('../assets/daisylogo1.png')" alt="Daisy logo">
         <div id="overlay-daisy-text" style="visibility: hidden;">
             <p class="project-divs-p">
                 <strong>DAISY</strong>
@@ -78,12 +79,20 @@
 
 <script>
 // import FooterComp from './FooterComp.vue';
+//import deskimage from '../assets/deskimage.png';
+//src="url({require('../assets/deskimage1.png')})"
+//import deskimg from 'deskimage1.png';
 
 export default {
     name: 'HomePage',
     components: {
         // 'FooterComp': FooterComp
     },
+//     data() {
+//     return {
+//       deskimage: require('../assets/deskimage1.png')
+//     }
+//   }
 }
 </script>
 
