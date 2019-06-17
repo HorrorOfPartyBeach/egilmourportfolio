@@ -23,10 +23,8 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        include: path.resolve('./main.js'),
         loader: 'babel-loader',
         exclude: /node_modules/,
-        query: require('./.babelrc'),
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
