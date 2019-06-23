@@ -15,12 +15,12 @@
       <li class="nav-item">
         <a class="nav-link" href="#projects">Projects</a>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link disabled" href="#">Blog</a>
-      </li>
+      </li> -->
             <li class="nav-item">
-              <router-link class="nav-link" to="/contact">Contact</router-link>
-        <!-- <a class="nav-link" href="/contact">Contact</a> -->
+              <!-- <router-link class="nav-link" to="/contact">Contact</router-link> -->
+        <a class="nav-link" href="https://www.linkedin.com/in/emmagilmour1/">Contact</a>
       </li>
     </ul>
   </div>

@@ -9,8 +9,8 @@
         </span>
         <span id="right-align-footer">
             <p class="footer-text">
-        Instagram <br>
-        LinkedIn
+        <a href="https://github.com/HorrorOfPartyBeach">Github</a> <br>
+        <a href="https://www.linkedin.com/in/emmagilmour1/">LinkedIn</a>
         </p>
         </span>
     </footer>

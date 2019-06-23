@@ -18,68 +18,42 @@
                 Emma Gilmour is a full stack developer working mainly with JavaScript and JavaScript
                 frameworks. After completing Northcoders; an intensive full-time, full stack coding 
                 bootcamp; she was hired as a full stack developer in January 2019 and has since gained 
-                experience with Vue.js and responsive web design.
+                experience with Vue.js, responsive web design and accessibility compliance.
             </p>
             <p class="about-me-p">
-                Emma's first experience with coding came years before bootcamps and tech startups, in the
-                form of editing the HTML in a MySpace page and a not unimpressive AOL Hometowns Scooby Doo
-                fansite. The opportunity to learn more didn't occur until 2017 when she was accepted onto
-                the first cohort of the TechReturners programme in MediaCity in Manchester. This introductory
-                12 week (one day a week) course covered HTML, CSS, JavaScript, jQuery, basic git and BBC:MicroBit.
-                Through TechReturners, Emma found out about Northcoders and was accepted onto the bootcamp in July
-                2018.
+                Emma's first experience with coding was years before bootcamps, in the
+                form of editing MySpace profile HTML and a not unimpressive AOL Hometowns Scooby Doo
+                fansite. The opportunity to learn more didn't occur until 2017 when she was joined the 
+                first TechReturners cohort in MediaCity in Manchester. This 12 week (once a week) course
+                covered HTML, CSS, JavaScript, jQuery, basic git and BBC:MicroBit.
             </p>
             <p class="about-me-p">
-                Northcoders is a JavaScript based bootcamp, covering basic JavaScript, back end tech
-                (postgreSQL, MongoDB, Express, Node.js), front end tech (React, Bootstrap) and testing suites/libraries
-                (Mocha, Chai, Jest, Cypress)
-
+                Through TechReturners, Emma found Northcoders and was accepted onto the bootcamp in July 
+                2018. Northcoders is a JavaScript based bootcamp, covering JavaScript, back end tech
+                (postgreSQL, MongoDB, Express, Node.js), front end tech (React, Bootstrap) and testing 
+                (Mocha, Chai, Jest, Cypress).
+            </p>
+            <p class="about-me-p">
+                Before retraining to be a developer, Emma had a varied career as a photographer/artist and 
+                decorator/carpenter. While seemingly very different areas, the decorating and carpentry was 
+                mainly focused on restoration and unique projects including designing and building a church 
+                altar from reclaimed Victorian church pews. Several years later, the altar is still in use 
+                in the church.
             </p>
         </div>
-
-        <!-- Projects -->
-<div class="container-fluid"  id="projects">
-  <div class="row" style="margin: 0;">
-    <div class="col-sm">
-        <div class="project-text">
-            <p class="project-divs-p">
-                <strong>Project 1</strong>
-            <br>
-                This Website
-            </p>
-      </div>
-    </div>
-    <div class="col-sm">
-        <div class="project-bg">
-        <img id="daisy-logo" :src="require('../assets/daisylogo1.png')" alt="Daisy logo">
-        <div id="overlay-daisy-text" style="visibility: hidden;">
-            <p class="project-divs-p">
-                <strong>DAISY</strong>
-            <br>
-                Chatbot
-            </p>
-      </div>
-      </div>
-    </div>
-    <div class="col-sm">
-        <div class="project-text">
-            <p class="project-divs-p">
-                <strong>Project 3</strong>
-            <br>
-                Non-coding projects
-            </p>
-      </div>
-    </div>
-  </div>
-</div>
+        <ProjectsPage></ProjectsPage>
         <!-- <FooterComp /> -->
     </div>
 </template>
 
 <script>
+import ProjectsPage from './ProjectsPage.vue';
 
 export default {
-    name: 'HomePage'
+    name: 'HomePage',
+    components: {
+        "ProjectsPage": ProjectsPage
+    }
 }
 </script>
 
@@ -214,78 +188,5 @@ p.about-me-p {
 }
 /********* About Me Section END *******/
 
-/********* Projects Section START *******/
-#projects {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background: orangered;
-    color: whitesmoke;
-    text-align: center;
-    display: flex;
-}
-.row {
-    width: 100%;
-    display:flex;
-    text-align: center;
-}
-.col-sm {
-    text-align: center;
-    display: block;
-}
-#daisy-logo {
-    border-radius: 50%;
-    border: grey 3px solid;
-    width: 120px;
-    height: 120px;
-    border-radius: 100px;
-    background: #000;
-    text-align: center;
-    margin: auto;
-    display: block;
-}
-#overlay-daisy-bg {
-    background-color: rgba(84, 80, 78, 0.56);
-    display: block;
-    text-align: center;
-    padding-bottom: 10px;
-    width: 120px;
-    height: 120px;
-    border-radius: 100px;
-    background: #000;
-    text-align: center;
-    margin: auto;
-}
-#overlay-daisy-text{
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-}
-.project-bg {
-    background-color: rgba(84, 80, 78, 0.56);
-    display: block;
-    text-align: center;
-    padding-bottom: 10px;
-    width: 120px;
-    height: 120px;
-    border-radius: 100px;
-    background: #000;
-    text-align: center;
-    margin: auto
-}
-.project-bg:hover .project-divs-p {
-    visibility: visible;
-}
-.project-bg:hover #daisy-logo {
-    opacity: 0.3;
-}
-.project-divs-p {
-    text-align: center;
-    vertical-align:text-bottom;
-    padding-top: 20px;
-    color: whitesmoke;
-}
-/********* Projects Section END *******/
+
 </style>
