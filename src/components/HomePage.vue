@@ -1,12 +1,11 @@
 <template>
     <div id="HomePage">
         <div id="desk-img-div" class="overlay-image">
-        <!-- <img class="desk-img" src={deskimg} alt="desk"/> -->
         <img class="desk-img" :src="require('../assets/deskimage1.png')" alt="desk">
         <div class="desk-img-text">
             <div id="desk-text-bg">
             <h1 class="desk-img-h1">Emma Gilmour</h1>
-            <p id="desk-img-p">HTML | CSS | JAVASCRIPT | VUE | REACT | GIT</p>
+            <p id="desk-img-p">HTML | CSS | JAVASCRIPT | VUE | REACT</p>
             </div>
             </div>
         </div>
@@ -78,21 +77,9 @@
 </template>
 
 <script>
-// import FooterComp from './FooterComp.vue';
-//import deskimage from '../assets/deskimage.png';
-//src="url({require('../assets/deskimage1.png')})"
-//import deskimg from 'deskimage1.png';
 
 export default {
-    name: 'HomePage',
-    components: {
-        // 'FooterComp': FooterComp
-    },
-//     data() {
-//     return {
-//       deskimage: require('../assets/deskimage1.png')
-//     }
-//   }
+    name: 'HomePage'
 }
 </script>
 
@@ -157,14 +144,7 @@ p.about-me-p {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-/********* Simple overlay START*******/
-/* .overlay-image h1.desk-img-h1 {
-    font-size: 80px;
-}
-.overlay-image p#desk-img-p {
-    font-size: 30px;
-} */
-/********* Simple overlay END *******/
+
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -180,10 +160,6 @@ p.about-me-p {
 
 /********* Simple overlay START*******/
 /* Main container */
-/* .overlay-image {
-    position: relative;
-    width: 100%;
-} */
 #desk-img-div {
     width: 100%;
     text-align:center;

@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "portfolio": "npm run clean && webpack --mode production",
-    "serve": "webpack-dev-server --mode development"
+    "serve": "webpack-dev-server --hot"
   },
   "author": "Emma Gilmour",
   "license": "MIT",

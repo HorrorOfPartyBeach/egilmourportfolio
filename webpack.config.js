@@ -4,10 +4,12 @@ const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
-  entry: './src/main.js',
+  entry: ['./src/main.js',
+  'webpack/hot/dev-server',
+  'webpack-dev-server/client?http://localhost:8080/',
+],
   output: {
     path: path.resolve(__dirname, './dist'),
-    //publicPath: '/dist/',
     filename: 'build.js'
   },
   module: {
@@ -34,35 +36,24 @@ module.exports = {
         }
       },
       { test: /\.css$/, use: ['vue-style-loader', 'css-loader']},
-      // { test: /\.(jpe?g|png|gif|svg)$/i, loader: "url-loader?name=src/assets/[name].[ext]"},
     ]
   },
-//   resolve: {
-//     alias: {
-//       'vue$': 'vue/dist/vue.esm.js'
-//     },
-//     extensions: ['*', '.js', '.vue', '.json']
-// },
 resolve: {
   alias: {
     'vue$': 'vue/dist/vue.esm.js'
   }
 },
-// resolve: {
-//   modules: ['node_modules'],
-//   alias: {
-//     public: path.join(__dirname, './public')
-//   }
-// },
-  // devServer: {
-  //   open: true,
-  //   hot: true,
-  //   contentBase: path.resolve(__dirname, 'dist'),
-  //   publicPath: '/dist/'
-  // },
   devServer: {
-    historyApiFallback: true,
-    noInfo: true
+    open: true,
+    hot: true,
+    // Development:
+    // contentBase: path.resolve(__dirname, './'),
+    // publicPath: 'http://localhost:8080/',
+    // Production:
+    contentBase: path.resolve(__dirname, 'dist'),
+    publicPath: '/dist/',
+    //historyApiFallback: true,
+    //noInfo: true
   },
   performance: {
     hints: false

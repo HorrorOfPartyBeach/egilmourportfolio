@@ -8,7 +8,6 @@
     <ul class="navbar-nav">
       <li class="nav-item active">
         <router-link class="nav-link" to="/">Home<span class="sr-only">(current)</span></router-link>
-        <!-- <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a> -->
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#about-me">About</a>
