@@ -25,11 +25,13 @@ export default {
 <style>
 #footer {
 background-color: rgb(83, 81, 81);
-margin-bottom: 0;
 padding-top: 30px;
-padding-bottom: 70px;
 padding-left: 30px;
 padding-right: 30px;
+padding-bottom: 70px;
+position: static;
+bottom: 0;
+width: 100%;
 }
 .footer-text {
     color: whitesmoke;

@@ -47,13 +47,14 @@ resolve: {
     open: true,
     hot: true,
     // Development:
-    // contentBase: path.resolve(__dirname, './'),
-    // publicPath: 'http://localhost:8080/',
+    contentBase: path.resolve(__dirname, './'),
+    publicPath: 'http://localhost:8080/',
     // Production:
-    contentBase: path.resolve(__dirname, 'dist'),
-    publicPath: '/dist/',
-    //historyApiFallback: true,
-    //noInfo: true
+    // contentBase: path.resolve(__dirname, 'dist'),
+    // publicPath: '/dist/',
+    // historyApiFallback: true,
+    // noInfo: true
+    historyApiFallback: true
   },
   performance: {
     hints: false

@@ -6,39 +6,46 @@
     <div class="col-sm">
         <div class="project-bg">
             <img class="circular-project-imgs" :src="require('../assets/deskimage.png')" alt="Emma Gilmour Portfolio Site Screenshot">
-            <div class="overlay-text" style="visibility: hidden;">
+            <router-link class="project-buttons" tag="button" to="/project/portfolio">
+            <div class="overlay-text" style="visibility: hidden;" aria-label="Portfolio: Emma Gilmour Portfolio">
                 <p class="project-divs-p">
                     <strong>PORTFOLIO</strong>
                 <br>
-                    Emma Gilmour Portfolio
+                Emma Gilmour Portfolio
                 </p>
             </div>
+            </router-link>
       </div>
     </div>
 
     <div class="col-sm">
         <div class="project-bg">
         <img class="circular-project-imgs" :src="require('../assets/daisylogo1.png')" alt="Daisy chatbot logo">
-        <div class="overlay-text" style="visibility: hidden;">
+        <router-link class="project-buttons" tag="button" to="/project/daisy">
+        <div class="overlay-text" style="visibility: hidden;" aria-label="Daisy: chatbot">
             <p class="project-divs-p">
                 <strong>DAISY</strong>
             <br>
-                Chatbot
+            Chatbot
             </p>
-      </div>
+        </div>
+        </router-link>
       </div>
     </div>
 
     <div class="col-sm">
+        
         <div class="project-bg">
         <img class="circular-project-imgs" :src="require('../assets/altar.png')" alt="photo">
-        <div class="overlay-text" style="visibility: hidden;">
+        <router-link class="project-buttons" tag="button" to="/project/previous">
+        <div class="overlay-text" style="visibility: hidden;" aria-label="Previous: Non-coding projects">
             <p class="project-divs-p">
                 <strong>PREVIOUS</strong>
             <br>
-                Non-coding projects
+            Non-coding projects
             </p>
         </div>
+        </router-link>
       </div>
     </div>
 
@@ -47,8 +54,15 @@
 </template>
 
 <script>
+//import SingleProject from './SingleProject.vue';
+// import FirstProject from './FirstProject.vue';
+
 export default {
-    name: 'ProjectsPage'
+    name: 'ProjectsPage',
+    components: { 
+        //"SingleProject": SingleProject,
+        // "FirstProject": FirstProject
+        }
 }
 </script>
 
@@ -103,9 +117,11 @@ export default {
 }
 .project-bg:hover .project-divs-p {
     visibility: visible;
+    cursor: pointer;
 }
 .project-bg:hover .circular-project-imgs {
     opacity: 0.3;
+    cursor: pointer;
 }
 .project-divs-p {
     text-align: center;
@@ -114,6 +130,22 @@ export default {
     color: whitesmoke;
     max-width: 120px;
     margin: auto;
+}
+
+.project-buttons {
+    display: block;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    border: transparent;
+    border-radius: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
 }
 /********* Projects Section END *******/
 </style>

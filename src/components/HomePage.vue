@@ -1,5 +1,5 @@
 <template>
-    <div id="HomePage">
+    <main id="HomePage">
         <div id="desk-img-div" class="overlay-image">
         <img class="desk-img" :src="require('../assets/deskimage1.png')" alt="desk">
         <div class="desk-img-text">
@@ -42,8 +42,7 @@
             </p>
         </div>
         <ProjectsPage></ProjectsPage>
-        <!-- <FooterComp /> -->
-    </div>
+    </main>
 </template>
 
 <script>
