@@ -9,8 +9,8 @@
         </span>
         <span id="right-align-footer">
             <p class="footer-text">
-        <a href="https://github.com/HorrorOfPartyBeach">Github</a> <br>
-        <a href="https://www.linkedin.com/in/emmagilmour1/">LinkedIn</a>
+        <a class="socialIcons" href="https://github.com/HorrorOfPartyBeach"><i class="fab fa-github fa-3x"></i></a>
+        <a class="socialIcons" href="https://www.linkedin.com/in/emmagilmour1/"><i class="fab fa-linkedin fa-3x"></i></a>
         </p>
         </span>
     </footer>
@@ -42,5 +42,12 @@ width: 100%;
 }
 #right-align-footer{
     float: right;
+}
+.socialIcons {
+    color: ghostwhite;
+}
+.socialIcons:focus,
+.socialIcons:hover {
+    color: orangered;
 }
 </style>
