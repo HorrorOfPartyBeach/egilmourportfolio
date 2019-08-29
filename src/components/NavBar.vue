@@ -11,15 +11,15 @@
         <router-link v-if="homeRoute() === false" class="nav-link" to="/">Home</router-link>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#about-me">About</a>
+        <a v-if="homeRoute() === true" class="nav-link" href="#about-me">About</a>
         <!-- <router-link v-if="aboutRoute()" class="nav-link" href="/about-me">About</router-link> -->
       </li>
-      <li class="nav-item">
+      <li v-if="homeRoute() === true" class="nav-item">
         <a class="nav-link" href="#projects">Projects</a>
       </li>
-      <!-- <li class="nav-item">
-        <a class="nav-link disabled" href="#">Blog</a>
-      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" href="https://dev.to/horrorofpartybeach">Blog</a>
+      </li>
             <li class="nav-item">
               <!-- <router-link class="nav-link" to="/contact">Contact</router-link> -->
         <a class="nav-link" href="https://www.linkedin.com/in/emmagilmour1/">Contact</a>
