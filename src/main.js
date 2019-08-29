@@ -31,7 +31,10 @@ const router = new VueRouter({
         }
       ]
   }
-  ]
+  ],
+  scrollBehavior() {
+    document.getElementById('App').scrollIntoView();
+}
 });
 
 new Vue({
