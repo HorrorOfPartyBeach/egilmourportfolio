@@ -13,12 +13,12 @@ Vue.use(VueRouter);
 
 const router = new VueRouter({
   routes: [
-    { path: '/', component: HomePage },
+    { path: '/', component: HomePage, query: {redirect: '/'} },
     { path: '/contact', component: ContactComp },
     { path: '/project/:name', component: SingleProject,
       children: [
         {
-          path: '',
+          path: 'portfolio',
           component: FirstProject
         },
         {
@@ -30,11 +30,12 @@ const router = new VueRouter({
           component: ThirdProject
         }
       ]
-  }
+  },
+  { path: '*', redirect: '/' },
   ],
   scrollBehavior() {
     document.getElementById('App').scrollIntoView();
-}
+},
 });
 
 new Vue({

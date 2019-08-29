@@ -9,6 +9,7 @@
         </span>
         <span id="right-align-footer">
             <p class="footer-text">
+        <a class="socialIcons" href="https://dev.to/horrorofpartybeach"><i class="fab fa-dev fa-3x" title="horrorofpartybeach's DEV Profile"></i></a>
         <a class="socialIcons" href="https://github.com/HorrorOfPartyBeach"><i class="fab fa-github fa-3x"></i></a>
         <a class="socialIcons" href="https://www.linkedin.com/in/emmagilmour1/"><i class="fab fa-linkedin fa-3x"></i></a>
         </p>
