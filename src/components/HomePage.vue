@@ -177,8 +177,8 @@ p.about-me-p {
 #about-me {
     padding-top: 20px;
     padding-bottom: 20px;
-    background: #000;
-    color: whitesmoke;
+    background: #F5F4D6;
+    color: #514D4D;
     text-align: center;
 }
 .about-me-p {

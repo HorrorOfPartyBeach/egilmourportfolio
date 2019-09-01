@@ -12,7 +12,6 @@
       </li>
       <li class="nav-item">
         <a v-if="homeRoute() === true" class="nav-link" href="#about-me">About</a>
-        <!-- <router-link v-if="aboutRoute()" class="nav-link" href="/about-me">About</router-link> -->
       </li>
       <li v-if="homeRoute() === true" class="nav-item">
         <a class="nav-link" href="#projects">Projects</a>
@@ -40,14 +39,6 @@ methods: {
           return false
         }
       },
-      // aboutRoute() {
-      //   console.log(this.$route, 'ROUTE');
-      //   if(this.$route.path == "/project/:name") {
-      //     return true
-      //   } else {
-      //     return false
-      //   }
-      // }
     }
 }
 </script>
@@ -56,7 +47,5 @@ methods: {
     #navbar {
         background-color: orangered;
         font-family: Arial, Helvetica, sans-serif;
-        /*This is not a font choice, this is just to test the right element is being targeted - bg color is not working*/
-        /* font-family: 'Comic Sans MS'; */
     }
 </style>
